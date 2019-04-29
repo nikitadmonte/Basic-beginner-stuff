@@ -3,17 +3,14 @@
 
 ---
 
-<p>Documenting JSON file for a meeting:<br>
-{<br>
-“meeting” : {<br>
-“time”: “2015-09-01 10:00”,<br>
-“duration”: 60,<br>
-“description”: “2016 Strategic Planning Meeting”,<br>
-“location”: “Building 23, Room 206”,<br>
-“reminder”: 15,<br>
-“invitees”: [“michael@example.com”, <a href="mailto:%22thelma@example.com">"thelma@example.com</a>",<br>
-<a href="mailto:%22david@example.com">"david@example.com</a>", <a href="mailto:%22leon@example.com">"leon@example.com</a>"]<br>
-}<br>
+<p>Documenting JSON file for a Weather forecast:</p>
+<p>{<br>
+“date”: “2015-09-01”,<br>
+“description”: “sunny”,<br>
+“maxTemp”: 22,<br>
+“minTemp”: 20,<br>
+“windSpeed”: 12,<br>
+“danger”: false<br>
 }</p>
 
 <table>
@@ -22,59 +19,45 @@
 <th>Element</th>
 <th>Description</th>
 <th>Type</th>
-<th>Required</th>
 <th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Meeting</td>
-<td>Top level</td>
-<td>Meeting data object</td>
-<td>Required</td>
-<td></td>
-</tr>
-<tr>
-<td>&nbsp; &nbsp; Time</td>
-<td>When meeting starts</td>
+<td>date</td>
+<td>Date of weather forecast</td>
 <td>String</td>
-<td>Required</td>
-<td>Time is in GMT</td>
+<td>Format is YYYY-MM-DD</td>
 </tr>
 <tr>
-<td>&nbsp; &nbsp; Duration</td>
-<td>How long will the meeting last</td>
+<td>description</td>
+<td>text description of the weather</td>
+<td>String</td>
+<td>Valid values include: Sunny, Rainy, Cloudy, Overcast, Partly Cloudy, Snowing</td>
+</tr>
+<tr>
+<td>maxTemp</td>
+<td>High Temperature</td>
 <td>Number</td>
-<td>Required</td>
-<td></td>
+<td>In degree celsius</td>
 </tr>
 <tr>
-<td>&nbsp; &nbsp; Description</td>
-<td>What is the meeting about</td>
-<td>String</td>
-<td>Required</td>
-<td>2016 Strategic Planning Meeting</td>
-</tr>
-<tr>
-<td>&nbsp; &nbsp; Location</td>
-<td>Where the meeting will be held</td>
-<td>String</td>
-<td>Optional</td>
-<td>Building 23, Room 206</td>
-</tr>
-<tr>
-<td>&nbsp; &nbsp; Reminder</td>
-<td>Sending a reminder for the meeting</td>
+<td>minTemp</td>
+<td>Low Temperature</td>
 <td>Number</td>
-<td>Optional</td>
-<td>Default is 15 minutes</td>
+<td>In degree celsius</td>
 </tr>
 <tr>
-<td>&nbsp; &nbsp; Invitees</td>
-<td>Who all are in the meeting</td>
-<td>Array of String</td>
-<td>Optional</td>
-<td>The strings should be valid email ID’s. Default is an empty array</td>
+<td>windspeed</td>
+<td>Wind speed</td>
+<td>Number</td>
+<td>In km/hr</td>
+</tr>
+<tr>
+<td>danger</td>
+<td>True if the weather conditions are dangerous, else false.</td>
+<td>Boolean</td>
+<td></td>
 </tr>
 </tbody>
 </table>
