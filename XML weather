@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dailyForecast>
+   <date>2019-04-29</date>
+   <description>sunny</description>
+   <maxTemp unit="c">20</maxTemp>
+   <minTemp unit="c">17</minTemp>
+   <windSpeed unit="km/hr">12</windSpeed>
+   <danger>false</danger>
+</dailyForecast>

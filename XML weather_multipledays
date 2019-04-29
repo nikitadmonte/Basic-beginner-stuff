@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dailyForecast>
+   <dailyForecast>
+      <date>2019-04-29</date>
+      <description>sunny</description>
+      <maxTemp unit="c">20</maxTemp>
+      <minTemp unit="c">17</minTemp>
+      <windSpeed unit="km/hr">12</windSpeed>
+      <danger>false</danger>
+   </dailyForecast>
+   <dailyForecast>
+      <date>2019-04-30</date>
+      <description>windy</description>
+      <maxTemp unit="c">20</maxTemp>
+      <minTemp unit="c">17</minTemp>
+      <windSpeed unit="km/hr">40</windSpeed>
+      <danger>true</danger>
+   </dailyForecast>
+   <dailyForecast />
+</dailyForecast>
