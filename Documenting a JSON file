@@ -1,0 +1,80 @@
+---
+
+
+---
+
+<p>Documenting JSON file for a meeting:<br>
+{<br>
+“meeting” : {<br>
+“time”: “2015-09-01 10:00”,<br>
+“duration”: 60,<br>
+“description”: “2016 Strategic Planning Meeting”,<br>
+“location”: “Building 23, Room 206”,<br>
+“reminder”: 15,<br>
+“invitees”: [“michael@example.com”, <a href="mailto:%22thelma@example.com">"thelma@example.com</a>",<br>
+<a href="mailto:%22david@example.com">"david@example.com</a>", <a href="mailto:%22leon@example.com">"leon@example.com</a>"]<br>
+}<br>
+}</p>
+
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+<th>Type</th>
+<th>Required</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meeting</td>
+<td>Top level</td>
+<td>Meeting data object</td>
+<td>Required</td>
+<td></td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; Time</td>
+<td>When meeting starts</td>
+<td>String</td>
+<td>Required</td>
+<td>Time is in GMT</td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; Duration</td>
+<td>How long will the meeting last</td>
+<td>Number</td>
+<td>Required</td>
+<td></td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; Description</td>
+<td>What is the meeting about</td>
+<td>String</td>
+<td>Required</td>
+<td>2016 Strategic Planning Meeting</td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; Location</td>
+<td>Where the meeting will be held</td>
+<td>String</td>
+<td>Optional</td>
+<td>Building 23, Room 206</td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; Reminder</td>
+<td>Sending a reminder for the meeting</td>
+<td>Number</td>
+<td>Optional</td>
+<td>Default is 15 minutes</td>
+</tr>
+<tr>
+<td>&nbsp; &nbsp; Invitees</td>
+<td>Who all are in the meeting</td>
+<td>Array of String</td>
+<td>Optional</td>
+<td>The strings should be valid email ID’s. Default is an empty array</td>
+</tr>
+</tbody>
+</table>
